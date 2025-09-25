@@ -1,0 +1,42 @@
+[gd_scene load_steps=4 format=3 uid="uid://b3y47hlme7qlj"]
+
+[ext_resource type="Texture2D" uid="uid://gwc4g323smx2" path="res://graphics/16-bit-spike-Sheet.png" id="1_d02f4"]
+
+[sub_resource type="GDScript" id="GDScript_uwvo7"]
+script/source = "extends Area2D
+
+signal player_died
+signal player_reset
+
+func _on_body_entered(_body):
+	player_died.emit()
+	$DeathTimer.start()
+	
+func _on_timer_timeout():
+	player_reset.emit()
+"
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vhu3w"]
+size = Vector2(60.5171, 45.278)
+
+[node name="Death" type="Area2D"]
+collision_layer = 2
+collision_mask = 2
+script = SubResource("GDScript_uwvo7")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(2, 1.767)
+texture = ExtResource("1_d02f4")
+hframes = 4
+
+[node name="DeathTimer" type="Timer" parent="."]
+wait_time = 1.5
+one_shot = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 4)
+scale = Vector2(0.198291, 0.309201)
+shape = SubResource("RectangleShape2D_vhu3w")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="timeout" from="DeathTimer" to="." method="_on_timer_timeout"]

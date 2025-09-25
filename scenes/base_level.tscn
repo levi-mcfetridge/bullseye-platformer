@@ -1,0 +1,878 @@
+[gd_scene load_steps=18 format=3 uid="uid://bwtx8isagoyqs"]
+
+[ext_resource type="Texture2D" uid="uid://c6okfqk4uoikh" path="res://graphics/industrial-zone/base tiles.png" id="1_af01q"]
+[ext_resource type="PackedScene" uid="uid://o3mi0v8p2kxi" path="res://scenes/Cyborg.tscn" id="2_1pm1j"]
+[ext_resource type="PackedScene" uid="uid://b3y47hlme7qlj" path="res://scenes/death.tscn" id="3_kngnw"]
+[ext_resource type="Texture2D" uid="uid://c3ubnfnilh64g" path="res://assets/1.png" id="4_ki4aa"]
+[ext_resource type="Texture2D" uid="uid://c6vwnk3nv1jko" path="res://assets/white.png" id="4_triqm"]
+[ext_resource type="Texture2D" uid="uid://cgtk78uqtbc5v" path="res://assets/3.png" id="6_nwboo"]
+[ext_resource type="Texture2D" uid="uid://b1ytrhs5cy63c" path="res://assets/4.png" id="7_x4wlt"]
+[ext_resource type="Texture2D" uid="uid://b461h517m3he3" path="res://assets/pixil-frame-0 (1).png" id="8_roeej"]
+[ext_resource type="Texture2D" uid="uid://u8oukjbwr73n" path="res://assets/5.png" id="8_vdq4f"]
+[ext_resource type="FontFile" uid="uid://b7m5p63yh7jxy" path="res://audio/joystix.monospace-regular.otf" id="10_3pgxw"]
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_t8p5p"]
+polygon = PackedVector2Array(-17, -17, 17, -17, 17, 17, -17, 17)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_x4gdq"]
+polygon = PackedVector2Array(-17, -17, 17, -17, 17, 17, -17, 17)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_ol355"]
+polygon = PackedVector2Array(-17, -17, 17, -17, 17, 17, -17, 17)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_bmd5t"]
+texture = ExtResource("1_af01q")
+texture_region_size = Vector2i(34, 34)
+0:0/0 = 0
+0:0/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_t8p5p")
+0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:0/0/physics_layer_0/angular_velocity = 0.0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-17, -17, 17, -17, 17, 17, -17, 17)
+1:0/0 = 0
+1:0/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_t8p5p")
+1:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:0/0/physics_layer_0/angular_velocity = 0.0
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-17, -17, 17, -17, 17, 17, -17, 17)
+1:1/0 = 0
+1:1/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_t8p5p")
+1:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:1/0/physics_layer_0/angular_velocity = 0.0
+1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-17, -17, 17, -17, 17, 17, -17, 17)
+0:1/0 = 0
+0:1/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_t8p5p")
+0:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:1/0/physics_layer_0/angular_velocity = 0.0
+0:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-17, -17, 17, -17, 17, 17, -17, 17)
+2:0/0 = 0
+2:0/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_t8p5p")
+2:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+2:0/0/physics_layer_0/angular_velocity = 0.0
+2:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-17, -17, 17, -17, 17, 17, -17, 17)
+2:2/0 = 0
+2:2/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_t8p5p")
+2:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+2:2/0/physics_layer_0/angular_velocity = 0.0
+2:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-17, -17, 17, -17, 17, 17, -17, 17)
+1:2/0 = 0
+1:2/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_t8p5p")
+1:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:2/0/physics_layer_0/angular_velocity = 0.0
+1:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-17, -17, 17, -17, 17, 17, -17, 17)
+0:2/0 = 0
+0:2/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_t8p5p")
+0:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:2/0/physics_layer_0/angular_velocity = 0.0
+0:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-17, -17, 17, -17, 17, 17, -17, 17)
+0:3/0 = 0
+0:3/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_t8p5p")
+0:3/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:3/0/physics_layer_0/angular_velocity = 0.0
+0:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-17, -17, 17, -17, 17, 17, -17, 17)
+1:3/0 = 0
+1:3/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_t8p5p")
+1:3/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:3/0/physics_layer_0/angular_velocity = 0.0
+1:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-17, -17, 17, -17, 17, 17, -17, 17)
+2:3/0 = 0
+2:3/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_t8p5p")
+2:3/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+2:3/0/physics_layer_0/angular_velocity = 0.0
+2:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-17, -17, 17, -17, 17, 17, -17, 17)
+2:4/0 = 0
+2:4/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_t8p5p")
+2:4/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+2:4/0/physics_layer_0/angular_velocity = 0.0
+2:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-17, -17, 17, -17, 17, 17, -17, 17)
+2:5/0 = 0
+2:5/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_t8p5p")
+2:5/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+2:5/0/physics_layer_0/angular_velocity = 0.0
+2:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-17, -17, 17, -17, 17, 17, -17, 17)
+1:5/0 = 0
+1:5/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_t8p5p")
+1:5/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:5/0/physics_layer_0/angular_velocity = 0.0
+1:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-17, -17, 17, -17, 17, 17, -17, 17)
+1:4/0 = 0
+1:4/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_t8p5p")
+1:4/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:4/0/physics_layer_0/angular_velocity = 0.0
+1:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-17, -17, 17, -17, 17, 17, -17, 17)
+0:4/0 = 0
+0:4/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_t8p5p")
+0:4/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:4/0/physics_layer_0/angular_velocity = 0.0
+0:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-17, -17, 17, -17, 17, 17, -17, 17)
+0:22/0 = 0
+0:22/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_ol355")
+0:22/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:22/0/physics_layer_0/angular_velocity = 0.0
+0:22/0/physics_layer_0/polygon_0/points = PackedVector2Array(-17, -17, 17, -17, 17, 17, -17, 17)
+1:22/0 = 0
+1:22/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_ol355")
+1:22/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:22/0/physics_layer_0/angular_velocity = 0.0
+1:22/0/physics_layer_0/polygon_0/points = PackedVector2Array(-17, -17, 17, -17, 17, 17, -17, 17)
+2:22/0 = 0
+2:22/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_ol355")
+2:22/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+2:22/0/physics_layer_0/angular_velocity = 0.0
+2:22/0/physics_layer_0/polygon_0/points = PackedVector2Array(-17, -17, 17, -17, 17, 17, -17, 17)
+2:21/0 = 0
+2:21/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_ol355")
+2:21/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+2:21/0/physics_layer_0/angular_velocity = 0.0
+2:21/0/physics_layer_0/polygon_0/points = PackedVector2Array(-17, -17, 17, -17, 17, 17, -17, 17)
+1:21/0 = 0
+1:21/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:21/0/physics_layer_0/angular_velocity = 0.0
+1:21/0/physics_layer_0/polygon_0/points = PackedVector2Array(-17, -17, 17, -17, 17, 17, -17, 17)
+1:20/0 = 0
+1:20/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_ol355")
+1:20/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:20/0/physics_layer_0/angular_velocity = 0.0
+1:20/0/physics_layer_0/polygon_0/points = PackedVector2Array(-17, -17, 17, -17, 17, 17, -17, 17)
+0:20/0 = 0
+0:20/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_ol355")
+0:20/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:20/0/physics_layer_0/angular_velocity = 0.0
+0:20/0/physics_layer_0/polygon_0/points = PackedVector2Array(-17, -17, 17, -17, 17, 17, -17, 17)
+2:20/0 = 0
+2:20/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_ol355")
+2:20/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+2:20/0/physics_layer_0/angular_velocity = 0.0
+2:20/0/physics_layer_0/polygon_0/points = PackedVector2Array(-17, -17, 17, -17, 17, 17, -17, 17)
+0:21/0 = 0
+0:21/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_ol355")
+0:21/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:21/0/physics_layer_0/angular_velocity = 0.0
+0:21/0/physics_layer_0/polygon_0/points = PackedVector2Array(-17, -17, 17, -17, 17, 17, -17, 17)
+0:19/0 = 0
+0:19/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_ol355")
+0:19/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:19/0/physics_layer_0/angular_velocity = 0.0
+0:19/0/physics_layer_0/polygon_0/points = PackedVector2Array(-17, -17, 17, -17, 17, 17, -17, 17)
+1:19/0 = 0
+1:19/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_ol355")
+1:19/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:19/0/physics_layer_0/angular_velocity = 0.0
+1:19/0/physics_layer_0/polygon_0/points = PackedVector2Array(-17, -17, 17, -17, 17, 17, -17, 17)
+1:18/0 = 0
+1:18/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:18/0/physics_layer_0/angular_velocity = 0.0
+1:18/0/physics_layer_0/polygon_0/points = PackedVector2Array(-17, -17, 17, -17, 17, 17, -17, 17)
+2:18/0 = 0
+2:18/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_ol355")
+2:18/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+2:18/0/physics_layer_0/angular_velocity = 0.0
+2:18/0/physics_layer_0/polygon_0/points = PackedVector2Array(-17, -17, 17, -17, 17, 17, -17, 17)
+0:18/0 = 0
+0:18/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_ol355")
+0:18/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:18/0/physics_layer_0/angular_velocity = 0.0
+0:18/0/physics_layer_0/polygon_0/points = PackedVector2Array(-17, -17, 17, -17, 17, 17, -17, 17)
+0:17/0 = 0
+0:17/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_ol355")
+0:17/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:17/0/physics_layer_0/angular_velocity = 0.0
+0:17/0/physics_layer_0/polygon_0/points = PackedVector2Array(-17, -17, 17, -17, 17, 17, -17, 17)
+1:17/0 = 0
+1:17/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_ol355")
+1:17/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:17/0/physics_layer_0/angular_velocity = 0.0
+1:17/0/physics_layer_0/polygon_0/points = PackedVector2Array(-17, -17, 17, -17, 17, 17, -17, 17)
+2:17/0 = 0
+2:17/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_ol355")
+2:17/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+2:17/0/physics_layer_0/angular_velocity = 0.0
+2:17/0/physics_layer_0/polygon_0/points = PackedVector2Array(-17, -17, 17, -17, 17, 17, -17, 17)
+0:16/0 = 0
+0:16/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_ol355")
+0:16/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:16/0/physics_layer_0/angular_velocity = 0.0
+0:16/0/physics_layer_0/polygon_0/points = PackedVector2Array(-17, -17, 17, -17, 17, 17, -17, 17)
+1:16/0 = 0
+1:16/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_ol355")
+1:16/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:16/0/physics_layer_0/angular_velocity = 0.0
+1:16/0/physics_layer_0/polygon_0/points = PackedVector2Array(-17, -17, 17, -17, 17, 17, -17, 17)
+2:16/0 = 0
+2:16/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_ol355")
+2:16/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+2:16/0/physics_layer_0/angular_velocity = 0.0
+2:16/0/physics_layer_0/polygon_0/points = PackedVector2Array(-17, -17, 17, -17, 17, 17, -17, 17)
+0:15/0 = 0
+0:15/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_x4gdq")
+0:15/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:15/0/physics_layer_0/angular_velocity = 0.0
+0:15/0/physics_layer_0/polygon_0/points = PackedVector2Array(-17, -17, 17, -17, 17, 17, -17, 17)
+0:14/0 = 0
+0:14/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_x4gdq")
+0:14/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:14/0/physics_layer_0/angular_velocity = 0.0
+0:14/0/physics_layer_0/polygon_0/points = PackedVector2Array(-17, -17, 17, -17, 17, 17, -17, 17)
+1:14/0 = 0
+1:14/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_x4gdq")
+1:14/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:14/0/physics_layer_0/angular_velocity = 0.0
+1:14/0/physics_layer_0/polygon_0/points = PackedVector2Array(-17, -17, 17, -17, 17, 17, -17, 17)
+2:14/0 = 0
+2:14/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_x4gdq")
+2:14/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+2:14/0/physics_layer_0/angular_velocity = 0.0
+2:14/0/physics_layer_0/polygon_0/points = PackedVector2Array(-17, -17, 17, -17, 17, 17, -17, 17)
+2:15/0 = 0
+2:15/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_ol355")
+2:15/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+2:15/0/physics_layer_0/angular_velocity = 0.0
+2:15/0/physics_layer_0/polygon_0/points = PackedVector2Array(-17, -17, 17, -17, 17, 17, -17, 17)
+1:15/0 = 0
+1:15/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_ol355")
+1:15/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:15/0/physics_layer_0/angular_velocity = 0.0
+1:15/0/physics_layer_0/polygon_0/points = PackedVector2Array(-17, -17, 17, -17, 17, 17, -17, 17)
+0:13/0 = 0
+0:13/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_x4gdq")
+0:13/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:13/0/physics_layer_0/angular_velocity = 0.0
+0:13/0/physics_layer_0/polygon_0/points = PackedVector2Array(-17, -17, 17, -17, 17, 17, -17, 17)
+1:13/0 = 0
+1:13/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_x4gdq")
+1:13/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:13/0/physics_layer_0/angular_velocity = 0.0
+1:13/0/physics_layer_0/polygon_0/points = PackedVector2Array(-17, -17, 17, -17, 17, 17, -17, 17)
+2:13/0 = 0
+2:13/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_x4gdq")
+2:13/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+2:13/0/physics_layer_0/angular_velocity = 0.0
+2:13/0/physics_layer_0/polygon_0/points = PackedVector2Array(-17, -17, 17, -17, 17, 17, -17, 17)
+0:12/0 = 0
+0:12/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_x4gdq")
+0:12/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:12/0/physics_layer_0/angular_velocity = 0.0
+0:12/0/physics_layer_0/polygon_0/points = PackedVector2Array(-17, -17, 17, -17, 17, 17, -17, 17)
+1:12/0 = 0
+1:12/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_x4gdq")
+1:12/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:12/0/physics_layer_0/angular_velocity = 0.0
+1:12/0/physics_layer_0/polygon_0/points = PackedVector2Array(-17, -17, 17, -17, 17, 17, -17, 17)
+1:11/0 = 0
+1:11/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_x4gdq")
+1:11/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:11/0/physics_layer_0/angular_velocity = 0.0
+1:11/0/physics_layer_0/polygon_0/points = PackedVector2Array(-17, -17, 17, -17, 17, 17, -17, 17)
+1:10/0 = 0
+1:10/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_x4gdq")
+1:10/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:10/0/physics_layer_0/angular_velocity = 0.0
+1:10/0/physics_layer_0/polygon_0/points = PackedVector2Array(-17, -17, 17, -17, 17, 17, -17, 17)
+0:9/0 = 0
+0:9/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_x4gdq")
+0:9/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:9/0/physics_layer_0/angular_velocity = 0.0
+0:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(-17, -17, 17, -17, 17, 17, -17, 17)
+0:10/0 = 0
+0:10/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_x4gdq")
+0:10/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:10/0/physics_layer_0/angular_velocity = 0.0
+0:10/0/physics_layer_0/polygon_0/points = PackedVector2Array(-17, -17, 17, -17, 17, 17, -17, 17)
+2:11/0 = 0
+2:11/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_x4gdq")
+2:11/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+2:11/0/physics_layer_0/angular_velocity = 0.0
+2:11/0/physics_layer_0/polygon_0/points = PackedVector2Array(-17, -17, 17, -17, 17, 17, -17, 17)
+2:12/0 = 0
+2:12/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_x4gdq")
+2:12/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+2:12/0/physics_layer_0/angular_velocity = 0.0
+2:12/0/physics_layer_0/polygon_0/points = PackedVector2Array(-17, -17, 17, -17, 17, 17, -17, 17)
+0:11/0 = 0
+0:11/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_x4gdq")
+0:11/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:11/0/physics_layer_0/angular_velocity = 0.0
+0:11/0/physics_layer_0/polygon_0/points = PackedVector2Array(-17, -17, 17, -17, 17, 17, -17, 17)
+1:9/0 = 0
+1:9/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_x4gdq")
+1:9/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:9/0/physics_layer_0/angular_velocity = 0.0
+1:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(-17, -17, 17, -17, 17, 17, -17, 17)
+0:8/0 = 0
+0:8/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_t8p5p")
+0:8/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:8/0/physics_layer_0/angular_velocity = 0.0
+0:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-17, -17, 17, -17, 17, 17, -17, 17)
+1:8/0 = 0
+1:8/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_t8p5p")
+1:8/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:8/0/physics_layer_0/angular_velocity = 0.0
+1:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-17, -17, 17, -17, 17, 17, -17, 17)
+2:8/0 = 0
+2:8/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_t8p5p")
+2:8/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+2:8/0/physics_layer_0/angular_velocity = 0.0
+2:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-17, -17, 17, -17, 17, 17, -17, 17)
+2:9/0 = 0
+2:9/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_x4gdq")
+2:9/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+2:9/0/physics_layer_0/angular_velocity = 0.0
+2:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(-17, -17, 17, -17, 17, 17, -17, 17)
+2:10/0 = 0
+2:10/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_x4gdq")
+2:10/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+2:10/0/physics_layer_0/angular_velocity = 0.0
+2:10/0/physics_layer_0/polygon_0/points = PackedVector2Array(-17, -17, 17, -17, 17, 17, -17, 17)
+0:7/0 = 0
+0:7/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_t8p5p")
+0:7/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:7/0/physics_layer_0/angular_velocity = 0.0
+0:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-17, -17, 17, -17, 17, 17, -17, 17)
+1:7/0 = 0
+1:7/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_t8p5p")
+1:7/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:7/0/physics_layer_0/angular_velocity = 0.0
+1:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-17, -17, 17, -17, 17, 17, -17, 17)
+2:7/0 = 0
+2:7/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_t8p5p")
+2:7/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+2:7/0/physics_layer_0/angular_velocity = 0.0
+2:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-17, -17, 17, -17, 17, 17, -17, 17)
+2:6/0 = 0
+2:6/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_t8p5p")
+2:6/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+2:6/0/physics_layer_0/angular_velocity = 0.0
+2:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-17, -17, 17, -17, 17, 17, -17, 17)
+0:5/0 = 0
+0:5/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_t8p5p")
+0:5/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:5/0/physics_layer_0/angular_velocity = 0.0
+0:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-17, -17, 17, -17, 17, 17, -17, 17)
+0:6/0 = 0
+0:6/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_t8p5p")
+0:6/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:6/0/physics_layer_0/angular_velocity = 0.0
+0:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-17, -17, 17, -17, 17, 17, -17, 17)
+1:6/0 = 0
+1:6/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_t8p5p")
+1:6/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:6/0/physics_layer_0/angular_velocity = 0.0
+1:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-17, -17, 17, -17, 17, 17, -17, 17)
+2:1/0 = 0
+2:1/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_t8p5p")
+2:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+2:1/0/physics_layer_0/angular_velocity = 0.0
+2:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-17, -17, 17, -17, 17, 17, -17, 17)
+
+[sub_resource type="TileSet" id="TileSet_hyfqa"]
+tile_size = Vector2i(34, 34)
+occlusion_layer_0/light_mask = 1
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_bmd5t")
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mwqtu"]
+size = Vector2(0.00292969, 49.1429)
+
+[sub_resource type="LabelSettings" id="LabelSettings_1dyvi"]
+font = ExtResource("10_3pgxw")
+font_size = 100
+
+[node name="Base level" type="Node2D"]
+position = Vector2(480, 405)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="CanvasLayer"]
+
+[node name="CanvasLayer4" type="ParallaxLayer" parent="CanvasLayer/ParallaxBackground"]
+motion_scale = Vector2(0.8, 0.5)
+motion_mirroring = Vector2(1152, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/ParallaxBackground/CanvasLayer4"]
+modulate = Color(0.223529, 0, 0.196078, 1)
+position = Vector2(-276, -176)
+scale = Vector2(2.21354, 3.102)
+texture = ExtResource("4_ki4aa")
+centered = false
+
+[node name="CanvasLayer3" type="ParallaxLayer" parent="CanvasLayer/ParallaxBackground"]
+motion_scale = Vector2(0.1, 0.5)
+motion_mirroring = Vector2(1152, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/ParallaxBackground/CanvasLayer3"]
+modulate = Color(0.537255, 0, 0.423529, 1)
+position = Vector2(-276, -176)
+scale = Vector2(2.21354, 3.102)
+texture = ExtResource("6_nwboo")
+centered = false
+
+[node name="CanvasLayer2" type="ParallaxLayer" parent="CanvasLayer/ParallaxBackground"]
+motion_scale = Vector2(0.3, 0.5)
+motion_mirroring = Vector2(1152, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/ParallaxBackground/CanvasLayer2"]
+modulate = Color(0.329412, 0, 0.380392, 1)
+position = Vector2(-276, -176)
+scale = Vector2(2.21701, 3.102)
+texture = ExtResource("7_x4wlt")
+centered = false
+
+[node name="CanvasLayer" type="ParallaxLayer" parent="CanvasLayer/ParallaxBackground"]
+motion_scale = Vector2(0.5, 0.5)
+motion_mirroring = Vector2(1152, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/ParallaxBackground/CanvasLayer"]
+modulate = Color(0.301961, 0.0156863, 0.317647, 1)
+position = Vector2(-276, -176)
+scale = Vector2(2.21701, 3.102)
+texture = ExtResource("8_vdq4f")
+centered = false
+
+[node name="TileMap" type="TileMap" parent="."]
+position = Vector2(-24, 124)
+tile_set = SubResource("TileSet_hyfqa")
+format = 2
+layer_0/tile_data = PackedInt32Array(393232, 131072, 12, 393233, 131072, 12, 393235, 131072, 9, 393236, 131072, 9, 393237, 131072, 9, 393238, 131072, 9, 393239, 131072, 9, 393240, 131072, 9, 393241, 131072, 9, 393242, 131072, 9, -720880, 0, 13, -655344, 0, 13, -327664, 0, 13, -262128, 0, 13, -196592, 0, 13, -131056, 0, 13, -65520, 0, 13, 16, 131072, 7, -393200, 0, 13, 393243, 131072, 9, 393253, 131072, 9, 393254, 131072, 9, 393255, 131072, 9, 393256, 131072, 9, 262160, 131072, 7, -458736, 0, 13, -524272, 0, 13, -589808, 0, 13, -917488, 65536, 10, -851952, 0, 13, -786416, 0, 13, -917465, 65536, 15, 393257, 131072, 9, 393258, 131072, 13, 393264, 65536, 13, 393265, 131072, 9, 393266, 131072, 9, 393267, 131072, 9, 393268, 131072, 9, 393269, 131072, 9, 393270, 131072, 9, 393271, 131072, 9, 393272, 131072, 9, 393273, 131072, 9, 393274, 131072, 9, 393275, 131072, 9, 393276, 131072, 9, 393277, 131072, 9, 393278, 131072, 9, 393279, 131072, 9, 393280, 131072, 9, 393281, 131072, 9, 393282, 131072, 9, 393283, 131072, 9, 393284, 131072, 9, 393285, 131072, 9, 393286, 131072, 9, 393287, 131072, 9, 393288, 131072, 9, 393289, 131072, 9, 393290, 131072, 9, 393291, 131072, 13, 393292, 65536, 13, 393293, 131072, 9, 393294, 131072, 9, 393295, 131072, 9, -131010, 0, 11, -65474, 0, 11, 62, 0, 11, 131134, 0, 11, 196670, 0, 11, 262206, 0, 11, 327742, 0, 11, 65598, 0, 11, -131008, 0, 11, 64, 0, 11, -65472, 0, 11, -196544, 0, 11, -262080, 0, 11, -327616, 0, 11, -393152, 0, 11, -458688, 0, 11, -524224, 0, 11, -589760, 0, 11, -589767, 0, 11, -524231, 0, 11, -655303, 0, 11, -720839, 0, 11, -786375, 0, 11, -851911, 0, 11, -917447, 65536, 15, -458695, 0, 11, -655296, 0, 11, -720832, 0, 11, -720833, 0, 11, -720834, 0, 11, -720835, 0, 11, -720836, 0, 11, -196536, 0, 11, -196535, 0, 11, -196534, 0, 20, -131000, 0, 11, -65464, 0, 11, 72, 0, 11, -458680, 0, 11, -458679, 0, 11, -458678, 0, 20, -524216, 0, 11, -589752, 0, 11, -655288, 0, 11, -720824, 0, 11, -786360, 65536, 15, -851896, 131072, 12, -917432, 131072, 12, -917460, 131072, 12, -851923, 131072, 12, -786388, 65536, 15, -720851, 65536, 12, -458707, 131072, 7, -786387, 131072, 10, -917459, 131072, 12, -851924, 131072, 12, -458708, 131072, 7, 327755, 65536, 12, 262219, 65536, 12, 196683, 65536, 12, 131147, 65536, 12, 65611, 65536, 12, 75, 65536, 12, -130997, 65536, 12, -65461, 65536, 12, -196533, 131072, 7, -917429, 131072, 12, -851893, 131072, 12, -786357, 131072, 10, -720821, 65536, 12, -655285, 65536, 12, -589749, 65536, 12, -524213, 65536, 12, -458677, 131072, 7, -196532, 131072, 7, -458676, 131072, 7, -917410, 65536, 15, -917406, 65536, 15, -917400, 131072, 12, -851864, 131072, 12, -786328, 65536, 15, 262161, 131072, 7, -65511, 0, 11, 25, 0, 11, 65561, 0, 11, 65560, 0, 11, 65559, 0, 11, -720866, 0, 19, -655330, 0, 19, -589794, 0, 19, -524258, 0, 19, -458722, 0, 19, -393186, 0, 19, 65564, 131072, 7, 65565, 131072, 7, 65566, 131072, 7, -524243, 65536, 12, -589779, 65536, 12, -655315, 65536, 12, 131097, 0, 11, 196633, 0, 11, 262169, 0, 11, 327705, 0, 11, -786402, 65536, 22, -917477, 65536, 15, -327650, 0, 19, -262114, 0, 19, -196578, 0, 19, -131042, 0, 22, -65500, 0, 11, -65499, 0, 11, -196565, 131072, 7, -196564, 131072, 7, -196563, 131072, 7, -196562, 131072, 7, -196561, 131072, 7, -196560, 131072, 7, -196566, 131072, 7, -131030, 65536, 12, -65494, 65536, 12, 42, 65536, 12, 327722, 65536, 12, 262186, 65536, 12, 196650, 65536, 12, 131114, 65536, 12, 65578, 65536, 12, -196567, 131072, 7, 51, 0, 1, 52, 65536, 1, 53, 65536, 1, -196555, 0, 11, -262091, 0, 11, -327627, 0, 11, -393163, 0, 11, -262088, 0, 1, -262087, 65536, 1, -262086, 131072, 1, -458699, 0, 11, -524235, 0, 11, -524236, 0, 11, -524237, 0, 11, -524238, 0, 11, -524239, 0, 11, -524240, 0, 11, -524241, 131072, 7, -524242, 0, 13, -589771, 0, 11, -655307, 0, 11, -655306, 0, 11, -655305, 0, 11, -655304, 0, 11, -720843, 0, 11, -786379, 0, 11, -851915, 0, 11, -917451, 65536, 15, 54, 65536, 1, 55, 65536, 1, -196552, 0, 4, -131016, 0, 4, -65480, 0, 4, 56, 65536, 5, -196550, 131072, 4, -131014, 131072, 4, -65478, 131072, 4, 58, 131072, 4, 65594, 131072, 4, 131130, 131072, 4, 196666, 131072, 4, 262202, 131072, 4, 327738, 131072, 4, 65587, 0, 4, 131123, 0, 4, 196659, 0, 4, 262195, 0, 4, 327731, 0, 4, -458694, 0, 11, -458693, 0, 11, -458692, 0, 11, -131009, 0, 11, -917435, 65536, 15, -851899, 0, 11, -786363, 0, 11, -720827, 0, 11, -655291, 0, 11, -589755, 0, 11, -524219, 0, 11, -458683, 0, 11, -393147, 0, 11, -327611, 0, 11, -262075, 0, 11, -196539, 0, 11, 65, 0, 11, 66, 0, 11, 67, 0, 11, 68, 0, 11, 69, 0, 11, 70, 0, 11, 71, 0, 11, 65601, 0, 11, 131137, 0, 11, 196673, 0, 11, 262209, 0, 11, 65607, 0, 11, 131143, 0, 11, 196679, 0, 11, 262215, 0, 11, 327751, 0, 11, 327745, 0, 11, 131138, 0, 11, 131139, 0, 11, 131140, 0, 11, 131141, 0, 11, 131142, 0, 11, 196675, 0, 11, 262211, 0, 11, 327747, 0, 11, 196677, 0, 11, 262213, 0, 11, 327749, 0, 11, 458827, 131072, 7, 393296, 131072, 9, 393297, 131072, 9, 393298, 131072, 9, 393299, 131072, 9, 393300, 131072, 9, 393301, 131072, 9, 393302, 131072, 9, 393303, 131072, 9, 393304, 131072, 9, 393305, 131072, 9, 393306, 131072, 9, 393307, 131072, 9, 393308, 131072, 9, 393309, 131072, 9, 393310, 131072, 9, 393311, 131072, 9, 393312, 131072, 9, 393313, 131072, 9, 393314, 131072, 9, 393315, 131072, 9, 393316, 131072, 9, 393317, 131072, 9, 393318, 131072, 9, 393319, 131072, 9, 393320, 131072, 9, 393321, 131072, 13, 458767, 131072, 7, 458768, 131072, 7, -851982, 65536, 10, -786446, 0, 13, -720910, 0, 13, -655374, 0, 13, -589838, 0, 13, -524302, 0, 13, -458766, 0, 13, -393230, 0, 13, -327694, 0, 13, -262158, 0, 13, -196622, 0, 13, -131086, 0, 13, -65550, 0, 13, -14, 0, 13, 65522, 0, 13, 131058, 0, 13, 196594, 0, 13, 262130, 0, 13, 327666, 0, 13, 393202, 0, 13, 458738, 65536, 13, 458739, 131072, 9, 458740, 131072, 9, 458741, 131072, 9, 458742, 131072, 9, 458743, 131072, 9, 458744, 131072, 9, 458745, 131072, 9, 458746, 131072, 9, 458747, 131072, 9, 458748, 131072, 9, 458749, 131072, 9, 458750, 131072, 9, 458751, 131072, 9, 393216, 131072, 9, 393217, 131072, 9, 393218, 131072, 9, 393219, 131072, 9, 393220, 131072, 9, 393221, 131072, 9, 393222, 131072, 9, 393223, 131072, 9, 393224, 131072, 9, 393225, 131072, 9, 393226, 131072, 9, 393227, 131072, 9, 393228, 131072, 9, 393229, 131072, 13, 393230, 131072, 12, -720881, 65536, 12, -655345, 65536, 12, -589809, 65536, 12, -524273, 65536, 12, -458737, 65536, 12, -393201, 65536, 12, -327665, 65536, 12, -262129, 65536, 12, -196593, 65536, 12, -131057, 65536, 12, -65521, 65536, 12, 15, 131072, 7, 262159, 131072, 7, 393231, 131072, 12, -917458, 65536, 10, -851922, 0, 13, -786386, 0, 13, -720850, 0, 13, -655314, 0, 13, -458706, 131072, 7, -917428, 65536, 10, -851892, 0, 13, -786356, 0, 13, -720820, 0, 13, -655284, 0, 13, -589748, 0, 13, -524212, 0, 13, -130996, 0, 13, -65460, 0, 13, 76, 0, 13, 65612, 0, 13, 131148, 0, 13, 196684, 0, 13, 262220, 0, 13, 327756, 0, 13, -917399, 131072, 12, -851863, 131072, 12, -786327, 131072, 10, -720791, 65536, 12, -655255, 65536, 12, -589719, 65536, 12, -524183, 65536, 12, -130967, 65536, 12, -65431, 65536, 12, 105, 65536, 12, 262249, 65536, 12, 327785, 65536, 12, 393210, 131072, 16, 393214, 0, 11, 327678, 0, 11, 262142, 0, 11, 196606, 0, 11, 327679, 0, 11, 393215, 0, 11, 262143, 0, 11, 262144, 0, 11, 327680, 0, 11, 196607, 0, 11, -851981, 65536, 15, -851980, 65536, 15, -851979, 65536, 15, -851978, 65536, 15, -851977, 65536, 15, -851976, 65536, 15, -851975, 65536, 15, -851974, 65536, 15, -851973, 65536, 15, -851972, 65536, 15, -851971, 65536, 15, -851970, 65536, 15, -851969, 65536, 15, -917504, 65536, 15, -917503, 65536, 15, -917502, 65536, 15, -917501, 65536, 15, -917500, 65536, 15, -917499, 65536, 15, -917498, 65536, 15, -917497, 65536, 15, -917496, 65536, 15, -917495, 65536, 15, -917494, 65536, 15, -917487, 65536, 15, -917486, 65536, 15, -917485, 65536, 15, -917481, 65536, 15, -917480, 65536, 15, -917479, 65536, 15, -917478, 65536, 15, -917470, 65536, 22, -917469, 65536, 15, -917468, 65536, 15, -917467, 65536, 15, -917466, 65536, 15, -917464, 65536, 15, -917463, 131072, 10, -917462, 131072, 12, -917461, 131072, 12, -917457, 65536, 15, -917456, 65536, 15, -917455, 65536, 15, -917454, 65536, 15, -917453, 65536, 15, -917452, 65536, 15, -917450, 65536, 15, -917449, 65536, 15, -917448, 65536, 15, -917446, 65536, 15, -917445, 65536, 15, -917444, 65536, 15, -917443, 65536, 15, -917442, 65536, 15, -917441, 65536, 15, -917440, 65536, 15, -917439, 65536, 15, -917438, 65536, 15, -917437, 65536, 15, -917436, 65536, 15, -917434, 65536, 15, -917433, 131072, 10, -917431, 131072, 12, -917430, 131072, 12, -917427, 65536, 15, -917426, 65536, 15, -917425, 65536, 15, -917424, 65536, 15, -917423, 65536, 15, -917422, 65536, 15, -917420, 65536, 15, -917419, 65536, 15, -917418, 65536, 15, -917417, 65536, 15, -917416, 65536, 15, -917415, 65536, 15, -917414, 65536, 15, -917413, 65536, 15, -917412, 65536, 15, -917411, 65536, 15, -917409, 65536, 15, -917408, 65536, 15, -917407, 65536, 15, -917405, 65536, 15, -917404, 65536, 15, -917403, 131072, 10, -917402, 131072, 12, -917401, 131072, 12, -851957, 65536, 12, -851956, 131072, 12, -851955, 131072, 12, -851954, 131072, 12, -786421, 0, 15, -786420, 65536, 15, -786419, 65536, 15, -786418, 65536, 15, -917493, 131072, 10, -786417, 131072, 10, -851953, 131072, 12, -917489, 131072, 12, -917490, 131072, 12, -917491, 131072, 12, -917492, 131072, 12, -851927, 65536, 12, -786391, 0, 15, -851926, 131072, 12, -786390, 65536, 15, -851925, 131072, 12, -786389, 65536, 15, -851897, 65536, 12, -786361, 0, 15, -851895, 131072, 12, -786359, 65536, 15, -851894, 131072, 12, -786358, 65536, 15, -851867, 65536, 12, -786331, 0, 15, -851866, 131072, 12, -786330, 65536, 15, -851865, 131072, 12, -786329, 65536, 15, 262158, 131072, 7, 14, 131072, 7, 17, 131072, 7, 262162, 131072, 7, 262163, 131072, 7, 327699, 131072, 7, 262157, 131072, 7, 327692, 131072, 7, 262156, 131072, 7, 327693, 65536, 12, 327694, 131072, 12, 327695, 131072, 12, 327696, 131072, 12, 327697, 131072, 12, 393234, 65536, 13, 327698, 0, 13, -196591, 0, 11, -262127, 0, 11, -196590, 0, 11, -196589, 0, 11, -196588, 0, 11, -196583, 0, 11, -262120, 0, 11, -262119, 0, 11, -262118, 0, 11, -131047, 0, 11, -917398, 65536, 10, -851862, 0, 13, -786326, 0, 13, -720790, 0, 13, -655254, 0, 13, -589718, 0, 13, -524182, 0, 13, -458646, 131072, 7, -196502, 131072, 7, -130966, 0, 13, -65430, 0, 13, 106, 0, 13, 65642, 0, 13, 131178, 0, 13, 196714, 0, 13, 262250, 0, 13, 327786, 0, 13, 393322, 65536, 13, -917397, 65536, 15, 393323, 131072, 9, -917396, 65536, 15, 393324, 131072, 9, -917395, 65536, 15, 393325, 131072, 9, -917394, 65536, 15, 393326, 131072, 9, -917393, 65536, 15, 393327, 131072, 9, -917392, 65536, 15, 393328, 131072, 9, -917391, 65536, 15, 393329, 131072, 9, -917390, 65536, 15, 393330, 131072, 9, -917389, 65536, 15, 393331, 131072, 9, -917388, 65536, 15, 393332, 131072, 9, -917387, 65536, 15, 393333, 131072, 9, -917386, 65536, 15, 393334, 131072, 9, -917385, 65536, 15, 393335, 131072, 9, -917384, 65536, 15, 393336, 131072, 9, -917383, 65536, 15, 393337, 131072, 9, -917382, 65536, 15, 393338, 131072, 9, -917381, 65536, 15, 393339, 131072, 9, -917380, 65536, 15, 393340, 131072, 9, -917379, 65536, 15, 393341, 131072, 9, -917378, 65536, 15, 393342, 131072, 9, -917377, 65536, 15, 393343, 131072, 9, -917376, 65536, 15, 393344, 131072, 9, -917375, 65536, 15, 393345, 131072, 9, -917374, 65536, 15, 393346, 131072, 9, -917373, 131072, 10, -851837, 65536, 12, -786301, 0, 15, 393347, 131072, 9, -917372, 131072, 12, -851836, 131072, 12, -786300, 65536, 15, 393348, 131072, 9, -917371, 131072, 12, -851835, 131072, 12, -786299, 65536, 15, 393349, 131072, 9, -917370, 131072, 12, -851834, 131072, 12, -786298, 65536, 15, 393350, 131072, 9, -917369, 131072, 12, -851833, 131072, 12, -786297, 131072, 10, -720761, 65536, 12, -655225, 65536, 12, -589689, 65536, 12, -524153, 65536, 12, -458617, 65536, 12, -393081, 65536, 12, -327545, 65536, 12, -262009, 65536, 12, -196473, 65536, 12, -130937, 65536, 12, -65401, 65536, 12, 135, 65536, 12, 262279, 65536, 12, 327815, 65536, 12, 393351, 131072, 13, -917368, 65536, 10, -851832, 0, 13, -786296, 0, 13, -720760, 0, 13, -655224, 0, 13, -589688, 0, 13, -524152, 0, 13, -130936, 0, 13, -65400, 0, 13, 136, 0, 13, 65672, 0, 13, 131208, 0, 13, 196744, 0, 13, 262280, 0, 13, 327816, 0, 13, 393352, 65536, 13, -917367, 65536, 15, 393353, 131072, 9, -917366, 65536, 15, 393354, 131072, 9, -917365, 65536, 15, 393355, 131072, 9, -917364, 65536, 15, 393356, 131072, 9, -917363, 65536, 15, 393357, 131072, 9, -917362, 65536, 15, 393358, 131072, 9, -917361, 65536, 15, 393359, 131072, 9, -917360, 65536, 15, 393360, 131072, 9, -917359, 65536, 15, 393361, 131072, 9, -917358, 65536, 15, 393362, 131072, 9, -917357, 65536, 15, 393363, 131072, 9, -917356, 65536, 15, 393364, 131072, 9, -917355, 65536, 15, 393365, 131072, 9, -917354, 65536, 15, 393366, 131072, 9, -917353, 65536, 15, 393367, 131072, 9, -917352, 65536, 15, 393368, 131072, 9, -917351, 65536, 15, 393369, 131072, 9, -917350, 65536, 15, 393370, 131072, 9, -917349, 65536, 15, 393371, 131072, 9, -917348, 65536, 15, 393372, 131072, 9, -917347, 65536, 15, 393373, 131072, 9, -917346, 65536, 15, 393374, 131072, 9, -917345, 65536, 15, 393375, 131072, 9, -917344, 65536, 15, 393376, 131072, 9, -917343, 131072, 10, -851807, 65536, 12, -786271, 0, 15, 393377, 131072, 9, -917342, 131072, 12, -851806, 131072, 12, -786270, 65536, 15, 393378, 131072, 9, -917341, 131072, 12, -851805, 131072, 12, -786269, 65536, 15, 393379, 131072, 9, -917340, 131072, 12, -851804, 131072, 12, -786268, 65536, 15, 393380, 131072, 9, -917339, 131072, 12, -851803, 131072, 12, -786267, 131072, 10, -720731, 65536, 12, -655195, 65536, 12, -589659, 65536, 12, -524123, 65536, 12, -458587, 65536, 12, -393051, 65536, 12, -327515, 65536, 12, -261979, 65536, 12, -196443, 65536, 12, -130907, 65536, 12, -65371, 65536, 12, 165, 65536, 12, 262309, 65536, 12, 327845, 65536, 12, 393381, 131072, 13, -131031, 131072, 7, 393259, 131072, 12, 327723, 131072, 12, 262187, 131072, 12, 196651, 131072, 12, 131115, 131072, 12, 65579, 131072, 12, 65580, 131072, 12, 44, 131072, 12, -65492, 131072, 12, -131028, 131072, 12, -131029, 131072, 12, -65493, 131072, 12, 43, 131072, 12, -65491, 131072, 12, -131027, 131072, 12, 45, 131072, 12, 65581, 131072, 12, 131117, 131072, 12, 196653, 131072, 12, 262189, 131072, 12, 327725, 131072, 12, 262188, 131072, 12, 196652, 131072, 12, 327724, 131072, 12, 393260, 131072, 12, 327726, 131072, 12, 393262, 131072, 12, 393261, 131072, 12, 393263, 131072, 12, 327727, 131072, 12, 262191, 131072, 12, 196655, 131072, 12, 131119, 131072, 12, 65583, 131072, 12, 47, 131072, 12, -65489, 131072, 12, -131025, 131072, 12, -131026, 131072, 12, -65490, 131072, 12, 46, 131072, 12, 65582, 131072, 12, 131118, 131072, 12, 196654, 131072, 12, 262190, 131072, 12, -196559, 131072, 7, -131023, 131072, 7, -458705, 131072, 7, -524244, 131072, 7, -589780, 131072, 7, -589777, 131072, 7, -589778, 0, 13, -131024, 0, 13, -65488, 0, 13, 48, 0, 13, 65584, 0, 13, 131120, 0, 13, 196656, 0, 13, 262192, 0, 13, 327728, 0, 13, 131116, 131072, 12, -851938, 65536, 22, -786403, 65536, 22, -786401, 65536, 22, -786400, 65536, 22, -786399, 65536, 22, -851939, 65536, 22, -851937, 65536, 22, -851936, 65536, 22, -851935, 65536, 22, -851940, 65536, 22, -786404, 65536, 22, -458720, 0, 22, -524256, 0, 19, -589792, 0, 19, -655328, 0, 19, -720864, 0, 19, -786412, 0, 15, -786410, 131072, 15, -786411, 65536, 15, -851948, 65536, 12, -851946, 0, 13, -917484, 131072, 10, -917482, 65536, 10, -851947, 131072, 12, -917483, 131072, 12, 131100, 131072, 7, 131101, 65536, 12, 196637, 65536, 12, 262173, 65536, 12, 327709, 65536, 12, 393245, 131072, 13, 131102, 131072, 12, 196638, 131072, 12, 262174, 131072, 12, 327710, 131072, 12, 393246, 131072, 12, 65567, 131072, 7, 131103, 131072, 12, 196639, 131072, 12, 262175, 131072, 12, 327711, 131072, 12, 393247, 131072, 12, 65568, 131072, 7, 131104, 0, 13, 196640, 0, 13, 262176, 0, 13, 327712, 0, 13, 393248, 65536, 13, 65569, 131072, 7, 131105, 131072, 7, 393249, 131072, 9, 393250, 131072, 9, 393251, 131072, 9, 393252, 131072, 9, 393244, 131072, 9, -917476, 65536, 22, -917475, 65536, 22, -917474, 65536, 22, -917473, 65536, 22, -917472, 65536, 22, -917471, 65536, 22, -720868, 0, 22, -589793, 0, 22, -524259, 0, 22, -589795, 0, 19, -655331, 0, 19, -655329, 0, 19, -720865, 0, 19, -720867, 0, 19, -720863, 0, 19, -655327, 0, 22, -786398, 0, 22, -851934, 65536, 22, -130998, 131072, 7, -196531, 131072, 7, -130995, 131072, 7, -524214, 131072, 7, -524211, 131072, 7, -458675, 131072, 7, -917421, 65536, 15, -851885, 0, 11, -786349, 0, 11, -720813, 0, 11, -655277, 0, 11, -589741, 0, 11, -524205, 0, 11, -458669, 0, 11, -393133, 0, 11, -327597, 0, 11, -524200, 0, 11, -458664, 0, 11, -393128, 0, 11, -327592, 0, 11, -262056, 0, 11, -196520, 0, 11, -130984, 0, 11, -589736, 0, 11, -655272, 0, 11, -720808, 0, 11, -786344, 0, 11, -851880, 0, 11, -130983, 0, 11, -196503, 131072, 7, -458647, 131072, 7, -458648, 131072, 7, -524184, 131072, 7, -458645, 131072, 7, -524181, 131072, 7, -196504, 131072, 7, -130968, 131072, 7, -196501, 131072, 7, -130965, 131072, 7, -196472, 0, 13, -262008, 0, 13, -327544, 0, 13, -393080, 0, 13, -458616, 0, 13, 65671, 65536, 12, 131207, 65536, 12, 196743, 65536, 12, 65641, 65536, 12, 131177, 65536, 12, 196713, 65536, 12, -262061, 0, 11, -196525, 0, 11, -130989, 0, 11, -65453, 0, 11, 262229, 0, 11, 262230, 0, 11, 262231, 0, 11, 262232, 0, 11, 327768, 0, 11, 94, 0, 11, 98, 0, 11, -65435, 0, 11, -655262, 0, 11, -720798, 0, 11, -720799, 0, 11, -720800, 0, 11, -720801, 0, 11, -720802, 0, 11, -655266, 0, 11, -65441, 0, 11, -65440, 0, 11, -65439, 0, 11, 95, 0, 11, 97, 0, 11, 65630, 0, 11, 131166, 0, 11, 196702, 0, 11, 262238, 0, 11, 65634, 0, 11, 131170, 0, 11, 196706, 0, 11, 262242, 0, 11, 327778, 0, 11, 327774, 0, 11, -786338, 0, 11, -851874, 0, 11, -786334, 0, 11, -851870, 0, 11, -65454, 0, 11, 262228, 0, 11, 262227, 0, 11, 327763, 0, 11, -720842, 131072, 16, -720841, 131072, 16, -720840, 131072, 16, -786376, 131072, 16, -589750, 131072, 16, 65603, 131072, 16, 65605, 131072, 16, 327732, 65536, 4, 262196, 65536, 4, 196660, 65536, 4, 131124, 65536, 4, 65588, 65536, 4, 65589, 65536, 4, 131125, 65536, 4, 131126, 65536, 4, 196662, 65536, 4, 196661, 65536, 4, 262197, 65536, 4, 262198, 65536, 4, 65590, 65536, 4, 65591, 65536, 4, 131127, 65536, 4, 196663, 65536, 4, 327733, 65536, 4, 327734, 65536, 4, 327735, 65536, 4, 327736, 65536, 4, 262200, 65536, 4, 196664, 65536, 4, 131128, 65536, 4, 262199, 65536, 4, 65592, 65536, 4, 131129, 65536, 4, 196665, 65536, 4, 262201, 65536, 4, 65593, 65536, 4, 57, 65536, 4, -65479, 65536, 4, -131015, 65536, 4, -196551, 65536, 4, 327737, 65536, 4, 327746, 65536, 14, 262210, 65536, 14, 196674, 65536, 14, 327748, 65536, 14, 262212, 65536, 14, 327750, 65536, 14, 262214, 65536, 14, 196678, 65536, 14, 196676, 65536, 14, 65604, 65536, 14, 65602, 65536, 14, 65606, 65536, 14, -786377, 65536, 14, -786378, 65536, 14, -851914, 65536, 14, -851913, 65536, 14, -851912, 65536, 14, -327561, 0, 11, -393097, 0, 11, -458633, 0, 11, -524169, 0, 11, -589705, 0, 11, -655241, 0, 11, -720777, 0, 11, -655247, 0, 11, -589711, 0, 11, -524175, 0, 11, -458639, 0, 11, -393103, 0, 11, -327567, 0, 11, -262031, 0, 11, -196495, 0, 11, -327562, 0, 11, -262027, 0, 11, -262026, 0, 11, -720783, 0, 11, -786319, 0, 11, -851855, 0, 11)
+
+[node name="Cyborg" parent="." instance=ExtResource("2_1pm1j")]
+light_mask = 2
+visibility_layer = 2
+position = Vector2(-390, 268)
+
+[node name="PointLight2D" type="PointLight2D" parent="Cyborg"]
+position = Vector2(-2.85714, 1.14285)
+scale = Vector2(4.23571, 4.03571)
+color = Color(0.603922, 0.996078, 0.964706, 0.223529)
+energy = 4.0
+texture = ExtResource("4_triqm")
+texture_scale = 0.8
+metadata/_edit_lock_ = true
+
+[node name="Camera2D" type="Camera2D" parent="."]
+scale = Vector2(1.75, 1.75)
+offset = Vector2(0, 5)
+limit_left = -20
+limit_top = 0
+position_smoothing_enabled = true
+metadata/_edit_lock_ = true
+
+[node name="Area2D" type="Area2D" parent="Camera2D"]
+position = Vector2(-7.42859, -1.71428)
+collision_mask = 2
+
+[node name="Cam to the right" type="CollisionShape2D" parent="Camera2D/Area2D"]
+position = Vector2(304, 120)
+shape = SubResource("RectangleShape2D_mwqtu")
+
+[node name="Cam to the right2" type="CollisionShape2D" parent="Camera2D/Area2D"]
+position = Vector2(869.143, -12.5714)
+shape = SubResource("RectangleShape2D_mwqtu")
+
+[node name="Cam to the right3" type="CollisionShape2D" parent="Camera2D/Area2D"]
+position = Vector2(1461.14, -15.4286)
+shape = SubResource("RectangleShape2D_mwqtu")
+
+[node name="Cam to the right4" type="CollisionShape2D" parent="Camera2D/Area2D"]
+position = Vector2(2057.14, -14.2857)
+shape = SubResource("RectangleShape2D_mwqtu")
+
+[node name="Ammo" type="Sprite2D" parent="Camera2D"]
+position = Vector2(258.857, -178.286)
+scale = Vector2(3.98663, 4.08256)
+texture = ExtResource("8_roeej")
+
+[node name="Ammo2" type="Sprite2D" parent="Camera2D"]
+position = Vector2(842.286, -177.714)
+scale = Vector2(3.98663, 4.08256)
+texture = ExtResource("8_roeej")
+
+[node name="Ammo3" type="Sprite2D" parent="Camera2D"]
+position = Vector2(1419.43, -177.143)
+scale = Vector2(3.98663, 4.08256)
+texture = ExtResource("8_roeej")
+
+[node name="Ammo4" type="Sprite2D" parent="Camera2D"]
+position = Vector2(2003.43, -177.714)
+scale = Vector2(3.98663, 4.08256)
+texture = ExtResource("8_roeej")
+
+[node name="Ammo5" type="Sprite2D" parent="Camera2D"]
+position = Vector2(2588.57, -177.143)
+scale = Vector2(3.98663, 4.08256)
+texture = ExtResource("8_roeej")
+
+[node name="DEATHHH" type="Node2D" parent="."]
+position = Vector2(2544, -30)
+scale = Vector2(1.75, 1.75)
+metadata/_edit_lock_ = true
+
+[node name="Death" parent="DEATHHH" instance=ExtResource("3_kngnw")]
+position = Vector2(-1321.14, 196.572)
+scale = Vector2(0.571429, 0.571429)
+
+[node name="Death2" parent="DEATHHH" instance=ExtResource("3_kngnw")]
+position = Vector2(-1341.14, 196.572)
+scale = Vector2(0.571429, 0.571429)
+
+[node name="Death3" parent="DEATHHH" instance=ExtResource("3_kngnw")]
+position = Vector2(-1360.57, 196.572)
+scale = Vector2(0.571429, 0.571429)
+
+[node name="Death10" parent="DEATHHH" instance=ExtResource("3_kngnw")]
+position = Vector2(-272, 196.572)
+scale = Vector2(0.571429, 0.571429)
+
+[node name="Death11" parent="DEATHHH" instance=ExtResource("3_kngnw")]
+position = Vector2(-196.571, -56.5715)
+rotation = 1.5708
+scale = Vector2(0.571429, 0.571429)
+
+[node name="Death13" parent="DEATHHH" instance=ExtResource("3_kngnw")]
+position = Vector2(-196.571, 40.0002)
+rotation = 1.5708
+scale = Vector2(0.571429, 0.571429)
+
+[node name="Death12" parent="DEATHHH" instance=ExtResource("3_kngnw")]
+position = Vector2(-134.857, -57.7141)
+rotation = -1.5708
+scale = Vector2(0.571429, 0.571429)
+
+[node name="Death24" parent="DEATHHH" instance=ExtResource("3_kngnw")]
+position = Vector2(-135.428, 39.4285)
+rotation = -1.5708
+scale = Vector2(0.571429, 0.571429)
+
+[node name="Death14" parent="DEATHHH" instance=ExtResource("3_kngnw")]
+position = Vector2(368.572, 78.2858)
+scale = Vector2(0.571429, 0.571429)
+
+[node name="Death15" parent="DEATHHH" instance=ExtResource("3_kngnw")]
+position = Vector2(445.715, -79.4286)
+rotation = 3.14159
+scale = Vector2(0.571429, 0.571429)
+
+[node name="Death26" parent="DEATHHH" instance=ExtResource("3_kngnw")]
+position = Vector2(-488.49, 308.899)
+scale = Vector2(0.326531, 0.326531)
+
+[node name="Death25" parent="DEATHHH" instance=ExtResource("3_kngnw")]
+position = Vector2(-488.49, 308.899)
+scale = Vector2(0.326531, 0.326531)
+
+[node name="Death16" parent="DEATHHH" instance=ExtResource("3_kngnw")]
+position = Vector2(426.286, -97.7143)
+rotation = 3.14159
+scale = Vector2(0.571429, 0.571429)
+
+[node name="Death17" parent="DEATHHH" instance=ExtResource("3_kngnw")]
+position = Vector2(409.143, -97.7143)
+rotation = 3.14159
+scale = Vector2(0.571429, 0.571429)
+
+[node name="Death18" parent="DEATHHH" instance=ExtResource("3_kngnw")]
+position = Vector2(390.286, -97.7143)
+rotation = 3.14159
+scale = Vector2(0.571429, 0.571429)
+
+[node name="Death19" parent="DEATHHH" instance=ExtResource("3_kngnw")]
+position = Vector2(368, -80.5714)
+rotation = 3.14159
+scale = Vector2(0.571429, 0.571429)
+
+[node name="Death20" parent="DEATHHH" instance=ExtResource("3_kngnw")]
+position = Vector2(446.858, 80.0001)
+scale = Vector2(0.571429, 0.571429)
+
+[node name="Death21" parent="DEATHHH" instance=ExtResource("3_kngnw")]
+position = Vector2(426.286, 60.0001)
+scale = Vector2(0.571429, 0.571429)
+
+[node name="Death22" parent="DEATHHH" instance=ExtResource("3_kngnw")]
+position = Vector2(406.858, 60.0001)
+scale = Vector2(0.571429, 0.571429)
+
+[node name="Death23" parent="DEATHHH" instance=ExtResource("3_kngnw")]
+position = Vector2(388.572, 60.5715)
+scale = Vector2(0.571429, 0.571429)
+
+[node name="Death8" parent="DEATHHH" instance=ExtResource("3_kngnw")]
+position = Vector2(-310.857, 196.572)
+scale = Vector2(0.571429, 0.571429)
+
+[node name="Death27" parent="DEATHHH" instance=ExtResource("3_kngnw")]
+position = Vector2(-486.857, 196.571)
+scale = Vector2(0.571429, 0.571429)
+
+[node name="Death28" parent="DEATHHH" instance=ExtResource("3_kngnw")]
+position = Vector2(-505.714, 197.143)
+scale = Vector2(0.571429, 0.571429)
+
+[node name="Death9" parent="DEATHHH" instance=ExtResource("3_kngnw")]
+position = Vector2(-291.428, 196.572)
+scale = Vector2(0.571429, 0.571429)
+
+[node name="Death29" parent="DEATHHH" instance=ExtResource("3_kngnw")]
+position = Vector2(-776.571, 196.571)
+scale = Vector2(0.571429, 0.571429)
+
+[node name="Death30" parent="DEATHHH" instance=ExtResource("3_kngnw")]
+position = Vector2(-815.429, 196)
+scale = Vector2(0.571429, 0.571429)
+
+[node name="Death31" parent="DEATHHH" instance=ExtResource("3_kngnw")]
+position = Vector2(-796.572, 196)
+scale = Vector2(0.571429, 0.571429)
+
+[node name="Death32" parent="DEATHHH" instance=ExtResource("3_kngnw")]
+position = Vector2(-718.857, 197.143)
+scale = Vector2(0.571429, 0.571429)
+
+[node name="Death38" parent="DEATHHH" instance=ExtResource("3_kngnw")]
+position = Vector2(-915.428, 196.571)
+scale = Vector2(0.571429, 0.571429)
+
+[node name="Death39" parent="DEATHHH" instance=ExtResource("3_kngnw")]
+position = Vector2(-934.286, 196.571)
+scale = Vector2(0.571429, 0.571429)
+
+[node name="Death49" parent="DEATHHH" instance=ExtResource("3_kngnw")]
+position = Vector2(-1050.29, 196.571)
+scale = Vector2(0.571429, 0.571429)
+
+[node name="Death50" parent="DEATHHH" instance=ExtResource("3_kngnw")]
+position = Vector2(-1069.14, 196.571)
+scale = Vector2(0.571429, 0.571429)
+
+[node name="Death51" parent="DEATHHH" instance=ExtResource("3_kngnw")]
+position = Vector2(-1010.86, 197.143)
+scale = Vector2(0.571429, 0.571429)
+
+[node name="Death54" parent="DEATHHH" instance=ExtResource("3_kngnw")]
+position = Vector2(-990.857, 196.571)
+scale = Vector2(0.571429, 0.571429)
+
+[node name="Death52" parent="DEATHHH" instance=ExtResource("3_kngnw")]
+position = Vector2(-1029.71, 197.143)
+scale = Vector2(0.571429, 0.571429)
+
+[node name="Death40" parent="DEATHHH" instance=ExtResource("3_kngnw")]
+position = Vector2(-953.143, 196.571)
+scale = Vector2(0.571429, 0.571429)
+
+[node name="Death33" parent="DEATHHH" instance=ExtResource("3_kngnw")]
+position = Vector2(-757.714, 196.571)
+scale = Vector2(0.571429, 0.571429)
+
+[node name="Death34" parent="DEATHHH" instance=ExtResource("3_kngnw")]
+position = Vector2(-738.285, 196.571)
+scale = Vector2(0.571429, 0.571429)
+
+[node name="Death35" parent="DEATHHH" instance=ExtResource("3_kngnw")]
+position = Vector2(-680.572, 196.571)
+scale = Vector2(0.571429, 0.571429)
+
+[node name="Death36" parent="DEATHHH" instance=ExtResource("3_kngnw")]
+position = Vector2(-700, 196.571)
+scale = Vector2(0.571429, 0.571429)
+
+[node name="Death37" parent="DEATHHH" instance=ExtResource("3_kngnw")]
+position = Vector2(-661.714, 197.143)
+scale = Vector2(0.571429, 0.571429)
+
+[node name="Death41" parent="DEATHHH" instance=ExtResource("3_kngnw")]
+position = Vector2(77.1429, 196.571)
+scale = Vector2(0.571429, 0.571429)
+
+[node name="Death42" parent="DEATHHH" instance=ExtResource("3_kngnw")]
+position = Vector2(38.2856, 196)
+scale = Vector2(0.571429, 0.571429)
+
+[node name="Death43" parent="DEATHHH" instance=ExtResource("3_kngnw")]
+position = Vector2(57.1428, 196)
+scale = Vector2(0.571429, 0.571429)
+
+[node name="Death44" parent="DEATHHH" instance=ExtResource("3_kngnw")]
+position = Vector2(134.857, 197.143)
+scale = Vector2(0.571429, 0.571429)
+
+[node name="Death45" parent="DEATHHH" instance=ExtResource("3_kngnw")]
+position = Vector2(96, 196.571)
+scale = Vector2(0.571429, 0.571429)
+
+[node name="Death46" parent="DEATHHH" instance=ExtResource("3_kngnw")]
+position = Vector2(115.429, 196.571)
+scale = Vector2(0.571429, 0.571429)
+
+[node name="Death53" parent="DEATHHH" instance=ExtResource("3_kngnw")]
+position = Vector2(271.428, 197.143)
+scale = Vector2(0.571429, 0.571429)
+
+[node name="Death56" parent="DEATHHH" instance=ExtResource("3_kngnw")]
+position = Vector2(309.714, 196.571)
+scale = Vector2(0.571429, 0.571429)
+
+[node name="Death57" parent="DEATHHH" instance=ExtResource("3_kngnw")]
+position = Vector2(290.285, 196.571)
+scale = Vector2(0.571429, 0.571429)
+
+[node name="Death58" parent="DEATHHH" instance=ExtResource("3_kngnw")]
+position = Vector2(328.571, 197.143)
+scale = Vector2(0.571429, 0.571429)
+
+[node name="Death59" parent="DEATHHH" instance=ExtResource("3_kngnw")]
+position = Vector2(349.143, 196.571)
+scale = Vector2(0.571429, 0.571429)
+
+[node name="Death65" parent="DEATHHH" instance=ExtResource("3_kngnw")]
+position = Vector2(464, 197.143)
+scale = Vector2(0.571429, 0.571429)
+
+[node name="Death66" parent="DEATHHH" instance=ExtResource("3_kngnw")]
+position = Vector2(484.571, 195.429)
+scale = Vector2(0.571429, 0.571429)
+
+[node name="Death67" parent="DEATHHH" instance=ExtResource("3_kngnw")]
+position = Vector2(542.286, 196)
+scale = Vector2(0.571429, 0.571429)
+
+[node name="Death68" parent="DEATHHH" instance=ExtResource("3_kngnw")]
+position = Vector2(503.428, 195.429)
+scale = Vector2(0.571429, 0.571429)
+
+[node name="Death69" parent="DEATHHH" instance=ExtResource("3_kngnw")]
+position = Vector2(522.858, 195.429)
+scale = Vector2(0.571429, 0.571429)
+
+[node name="Death71" parent="DEATHHH" instance=ExtResource("3_kngnw")]
+position = Vector2(561.143, 195.429)
+scale = Vector2(0.571429, 0.571429)
+
+[node name="JumpDelay" type="Timer" parent="."]
+wait_time = 0.2
+one_shot = true
+
+[node name="Label" type="Label" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "BullsEye"
+label_settings = SubResource("LabelSettings_1dyvi")
+
+[connection signal="body_entered" from="Camera2D/Area2D" to="Cyborg" method="_on_area_2d_body_entered"]
+[connection signal="player_died" from="DEATHHH/Death" to="Cyborg" method="_on_death_player_died"]
+[connection signal="player_reset" from="DEATHHH/Death" to="Cyborg" method="_on_death_player_reset"]
+[connection signal="player_died" from="DEATHHH/Death2" to="Cyborg" method="_on_death_player_died"]
+[connection signal="player_reset" from="DEATHHH/Death2" to="Cyborg" method="_on_death_player_reset"]
+[connection signal="player_died" from="DEATHHH/Death3" to="Cyborg" method="_on_death_player_died"]
+[connection signal="player_reset" from="DEATHHH/Death3" to="Cyborg" method="_on_death_player_reset"]
+[connection signal="player_died" from="DEATHHH/Death10" to="Cyborg" method="_on_death_player_died"]
+[connection signal="player_reset" from="DEATHHH/Death10" to="Cyborg" method="_on_death_player_reset"]
+[connection signal="player_died" from="DEATHHH/Death11" to="Cyborg" method="_on_death_player_died"]
+[connection signal="player_reset" from="DEATHHH/Death11" to="Cyborg" method="_on_death_player_reset"]
+[connection signal="player_died" from="DEATHHH/Death13" to="Cyborg" method="_on_death_player_died"]
+[connection signal="player_reset" from="DEATHHH/Death13" to="Cyborg" method="_on_death_player_reset"]
+[connection signal="player_died" from="DEATHHH/Death12" to="Cyborg" method="_on_death_player_died"]
+[connection signal="player_reset" from="DEATHHH/Death12" to="Cyborg" method="_on_death_player_reset"]
+[connection signal="player_died" from="DEATHHH/Death24" to="Cyborg" method="_on_death_player_died"]
+[connection signal="player_reset" from="DEATHHH/Death24" to="Cyborg" method="_on_death_player_reset"]
+[connection signal="player_died" from="DEATHHH/Death14" to="Cyborg" method="_on_death_player_died"]
+[connection signal="player_reset" from="DEATHHH/Death14" to="Cyborg" method="_on_death_player_reset"]
+[connection signal="player_died" from="DEATHHH/Death15" to="Cyborg" method="_on_death_player_died"]
+[connection signal="player_reset" from="DEATHHH/Death15" to="Cyborg" method="_on_death_player_reset"]
+[connection signal="player_died" from="DEATHHH/Death26" to="Cyborg" method="_on_death_player_died"]
+[connection signal="player_reset" from="DEATHHH/Death26" to="Cyborg" method="_on_death_player_reset"]
+[connection signal="player_died" from="DEATHHH/Death25" to="Cyborg" method="_on_death_player_died"]
+[connection signal="player_reset" from="DEATHHH/Death25" to="Cyborg" method="_on_death_player_reset"]
+[connection signal="player_died" from="DEATHHH/Death16" to="Cyborg" method="_on_death_player_died"]
+[connection signal="player_reset" from="DEATHHH/Death16" to="Cyborg" method="_on_death_player_reset"]
+[connection signal="player_died" from="DEATHHH/Death17" to="Cyborg" method="_on_death_player_died"]
+[connection signal="player_reset" from="DEATHHH/Death17" to="Cyborg" method="_on_death_player_reset"]
+[connection signal="player_died" from="DEATHHH/Death18" to="Cyborg" method="_on_death_player_died"]
+[connection signal="player_reset" from="DEATHHH/Death18" to="Cyborg" method="_on_death_player_reset"]
+[connection signal="player_died" from="DEATHHH/Death19" to="Cyborg" method="_on_death_player_died"]
+[connection signal="player_reset" from="DEATHHH/Death19" to="Cyborg" method="_on_death_player_reset"]
+[connection signal="player_died" from="DEATHHH/Death20" to="Cyborg" method="_on_death_player_died"]
+[connection signal="player_reset" from="DEATHHH/Death20" to="Cyborg" method="_on_death_player_reset"]
+[connection signal="player_died" from="DEATHHH/Death21" to="Cyborg" method="_on_death_player_died"]
+[connection signal="player_reset" from="DEATHHH/Death21" to="Cyborg" method="_on_death_player_reset"]
+[connection signal="player_died" from="DEATHHH/Death22" to="Cyborg" method="_on_death_player_died"]
+[connection signal="player_reset" from="DEATHHH/Death22" to="Cyborg" method="_on_death_player_reset"]
+[connection signal="player_died" from="DEATHHH/Death23" to="Cyborg" method="_on_death_player_died"]
+[connection signal="player_reset" from="DEATHHH/Death23" to="Cyborg" method="_on_death_player_reset"]
+[connection signal="player_died" from="DEATHHH/Death8" to="Cyborg" method="_on_death_player_died"]
+[connection signal="player_reset" from="DEATHHH/Death8" to="Cyborg" method="_on_death_player_reset"]
+[connection signal="player_died" from="DEATHHH/Death27" to="Cyborg" method="_on_death_player_died"]
+[connection signal="player_reset" from="DEATHHH/Death27" to="Cyborg" method="_on_death_player_reset"]
+[connection signal="player_died" from="DEATHHH/Death28" to="Cyborg" method="_on_death_player_died"]
+[connection signal="player_reset" from="DEATHHH/Death28" to="Cyborg" method="_on_death_player_reset"]
+[connection signal="player_died" from="DEATHHH/Death9" to="Cyborg" method="_on_death_player_died"]
+[connection signal="player_reset" from="DEATHHH/Death9" to="Cyborg" method="_on_death_player_reset"]
+[connection signal="player_died" from="DEATHHH/Death29" to="Cyborg" method="_on_death_player_died"]
+[connection signal="player_reset" from="DEATHHH/Death29" to="Cyborg" method="_on_death_player_reset"]
+[connection signal="player_died" from="DEATHHH/Death30" to="Cyborg" method="_on_death_player_died"]
+[connection signal="player_reset" from="DEATHHH/Death30" to="Cyborg" method="_on_death_player_reset"]
+[connection signal="player_died" from="DEATHHH/Death31" to="Cyborg" method="_on_death_player_died"]
+[connection signal="player_reset" from="DEATHHH/Death31" to="Cyborg" method="_on_death_player_reset"]
+[connection signal="player_died" from="DEATHHH/Death32" to="Cyborg" method="_on_death_player_died"]
+[connection signal="player_reset" from="DEATHHH/Death32" to="Cyborg" method="_on_death_player_reset"]
+[connection signal="player_died" from="DEATHHH/Death38" to="Cyborg" method="_on_death_player_died"]
+[connection signal="player_reset" from="DEATHHH/Death38" to="Cyborg" method="_on_death_player_reset"]
+[connection signal="player_died" from="DEATHHH/Death39" to="Cyborg" method="_on_death_player_died"]
+[connection signal="player_reset" from="DEATHHH/Death39" to="Cyborg" method="_on_death_player_reset"]
+[connection signal="player_died" from="DEATHHH/Death49" to="Cyborg" method="_on_death_player_died"]
+[connection signal="player_reset" from="DEATHHH/Death49" to="Cyborg" method="_on_death_player_reset"]
+[connection signal="player_died" from="DEATHHH/Death50" to="Cyborg" method="_on_death_player_died"]
+[connection signal="player_reset" from="DEATHHH/Death50" to="Cyborg" method="_on_death_player_reset"]
+[connection signal="player_died" from="DEATHHH/Death51" to="Cyborg" method="_on_death_player_died"]
+[connection signal="player_reset" from="DEATHHH/Death51" to="Cyborg" method="_on_death_player_reset"]
+[connection signal="player_died" from="DEATHHH/Death54" to="Cyborg" method="_on_death_player_died"]
+[connection signal="player_reset" from="DEATHHH/Death54" to="Cyborg" method="_on_death_player_reset"]
+[connection signal="player_died" from="DEATHHH/Death52" to="Cyborg" method="_on_death_player_died"]
+[connection signal="player_reset" from="DEATHHH/Death52" to="Cyborg" method="_on_death_player_reset"]
+[connection signal="player_died" from="DEATHHH/Death40" to="Cyborg" method="_on_death_player_died"]
+[connection signal="player_reset" from="DEATHHH/Death40" to="Cyborg" method="_on_death_player_reset"]
+[connection signal="player_died" from="DEATHHH/Death33" to="Cyborg" method="_on_death_player_died"]
+[connection signal="player_reset" from="DEATHHH/Death33" to="Cyborg" method="_on_death_player_reset"]
+[connection signal="player_died" from="DEATHHH/Death34" to="Cyborg" method="_on_death_player_died"]
+[connection signal="player_reset" from="DEATHHH/Death34" to="Cyborg" method="_on_death_player_reset"]
+[connection signal="player_died" from="DEATHHH/Death35" to="Cyborg" method="_on_death_player_died"]
+[connection signal="player_reset" from="DEATHHH/Death35" to="Cyborg" method="_on_death_player_reset"]
+[connection signal="player_died" from="DEATHHH/Death36" to="Cyborg" method="_on_death_player_died"]
+[connection signal="player_reset" from="DEATHHH/Death36" to="Cyborg" method="_on_death_player_reset"]
+[connection signal="player_died" from="DEATHHH/Death37" to="Cyborg" method="_on_death_player_died"]
+[connection signal="player_reset" from="DEATHHH/Death37" to="Cyborg" method="_on_death_player_reset"]
+[connection signal="player_died" from="DEATHHH/Death41" to="Cyborg" method="_on_death_player_died"]
+[connection signal="player_reset" from="DEATHHH/Death41" to="Cyborg" method="_on_death_player_reset"]
+[connection signal="player_died" from="DEATHHH/Death42" to="Cyborg" method="_on_death_player_died"]
+[connection signal="player_reset" from="DEATHHH/Death42" to="Cyborg" method="_on_death_player_reset"]
+[connection signal="player_died" from="DEATHHH/Death43" to="Cyborg" method="_on_death_player_died"]
+[connection signal="player_reset" from="DEATHHH/Death43" to="Cyborg" method="_on_death_player_reset"]
+[connection signal="player_died" from="DEATHHH/Death44" to="Cyborg" method="_on_death_player_died"]
+[connection signal="player_reset" from="DEATHHH/Death44" to="Cyborg" method="_on_death_player_reset"]
+[connection signal="player_died" from="DEATHHH/Death45" to="Cyborg" method="_on_death_player_died"]
+[connection signal="player_reset" from="DEATHHH/Death45" to="Cyborg" method="_on_death_player_reset"]
+[connection signal="player_died" from="DEATHHH/Death46" to="Cyborg" method="_on_death_player_died"]
+[connection signal="player_reset" from="DEATHHH/Death46" to="Cyborg" method="_on_death_player_reset"]
+[connection signal="player_died" from="DEATHHH/Death53" to="Cyborg" method="_on_death_player_died"]
+[connection signal="player_reset" from="DEATHHH/Death53" to="Cyborg" method="_on_death_player_reset"]
+[connection signal="player_died" from="DEATHHH/Death56" to="Cyborg" method="_on_death_player_died"]
+[connection signal="player_reset" from="DEATHHH/Death56" to="Cyborg" method="_on_death_player_reset"]
+[connection signal="player_died" from="DEATHHH/Death57" to="Cyborg" method="_on_death_player_died"]
+[connection signal="player_reset" from="DEATHHH/Death57" to="Cyborg" method="_on_death_player_reset"]
+[connection signal="player_died" from="DEATHHH/Death58" to="Cyborg" method="_on_death_player_died"]
+[connection signal="player_reset" from="DEATHHH/Death58" to="Cyborg" method="_on_death_player_reset"]
+[connection signal="player_died" from="DEATHHH/Death59" to="Cyborg" method="_on_death_player_died"]
+[connection signal="player_reset" from="DEATHHH/Death59" to="Cyborg" method="_on_death_player_reset"]
+[connection signal="player_died" from="DEATHHH/Death65" to="Cyborg" method="_on_death_player_died"]
+[connection signal="player_reset" from="DEATHHH/Death65" to="Cyborg" method="_on_death_player_reset"]
+[connection signal="player_died" from="DEATHHH/Death66" to="Cyborg" method="_on_death_player_died"]
+[connection signal="player_reset" from="DEATHHH/Death66" to="Cyborg" method="_on_death_player_reset"]
+[connection signal="player_died" from="DEATHHH/Death67" to="Cyborg" method="_on_death_player_died"]
+[connection signal="player_reset" from="DEATHHH/Death67" to="Cyborg" method="_on_death_player_reset"]
+[connection signal="player_died" from="DEATHHH/Death68" to="Cyborg" method="_on_death_player_died"]
+[connection signal="player_reset" from="DEATHHH/Death68" to="Cyborg" method="_on_death_player_reset"]
+[connection signal="player_died" from="DEATHHH/Death69" to="Cyborg" method="_on_death_player_died"]
+[connection signal="player_reset" from="DEATHHH/Death69" to="Cyborg" method="_on_death_player_reset"]
+[connection signal="player_died" from="DEATHHH/Death71" to="Cyborg" method="_on_death_player_died"]
+[connection signal="player_reset" from="DEATHHH/Death71" to="Cyborg" method="_on_death_player_reset"]
+[connection signal="timeout" from="JumpDelay" to="Cyborg" method="_on_jump_delay_timeout"]

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b00sol8bg2umq"
+path="res://.godot/imported/LASER GUN SOUND EFFECT - FREE.mp3-07f15e39bb4efa16ef19475ac558964b.mp3str"
+
+[deps]
+
+source_file="res://audio/LASER GUN SOUND EFFECT - FREE.mp3"
+dest_files=["res://.godot/imported/LASER GUN SOUND EFFECT - FREE.mp3-07f15e39bb4efa16ef19475ac558964b.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

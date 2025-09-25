@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cpnogl3j5v7dr"
+path="res://.godot/imported/Untitled video - Made with Clipchamp (4).mp3-e4be353cc56e3d13a0ef710aad672a45.mp3str"
+
+[deps]
+
+source_file="res://audio/Untitled video - Made with Clipchamp (4).mp3"
+dest_files=["res://.godot/imported/Untitled video - Made with Clipchamp (4).mp3-e4be353cc56e3d13a0ef710aad672a45.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

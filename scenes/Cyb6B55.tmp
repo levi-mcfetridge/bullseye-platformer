@@ -1,0 +1,156 @@
+[gd_scene load_steps=14 format=3 uid="uid://o3mi0v8p2kxi"]
+
+[ext_resource type="Script" path="res://scenes/Cyborg.gd" id="1_pltcv"]
+[ext_resource type="Texture2D" uid="uid://vwdxrck2kx3a" path="res://graphics/gun-pack/1 Characters/3 Cyborg/Idle1.png" id="2_egdvd"]
+[ext_resource type="Texture2D" uid="uid://dxcwalq0k1gty" path="res://graphics/gun-pack/1 Characters/3 Cyborg/IdleFlipped.png" id="3_b2h2d"]
+[ext_resource type="Texture2D" uid="uid://l6wu2pa2uubb" path="res://graphics/gun-pack/1 Characters/3 Cyborg/Run1.png" id="3_eibk6"]
+[ext_resource type="AudioStream" uid="uid://bklbhv2g8mgk6" path="res://audio/Walking on metal - Sound Effect Improved With Audacity.mp3" id="5_w4r8d"]
+[ext_resource type="AudioStream" uid="uid://bp5aspd5y115m" path="res://audio/Futuristic & Electronic (Royalty Free Music) - _NEON UNDERWORLD_ by @PunchDeck.mp3" id="6_t0bg7"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_4cy3e"]
+radius = 7.42857
+height = 38.0
+
+[sub_resource type="Animation" id="Animation_1w7go"]
+length = 0.001
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Idle_Player_Left:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Running_Player:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="Animation" id="Animation_1u2yn"]
+resource_name = "idle_left"
+length = 0.8
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Idle_Player_Left:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.5, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3]
+}
+
+[sub_resource type="Animation" id="Animation_x5wr3"]
+resource_name = "idle_right"
+length = 0.8
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Idle_Player_Right:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.5, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3]
+}
+
+[sub_resource type="Animation" id="Animation_qlt8f"]
+resource_name = "run_right"
+length = 0.6
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Running_Player:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Idle_Player_Left:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_j0yco"]
+_data = {
+"RESET": SubResource("Animation_1w7go"),
+"idle_left": SubResource("Animation_1u2yn"),
+"idle_right": SubResource("Animation_x5wr3"),
+"run_right": SubResource("Animation_qlt8f")
+}
+
+[sub_resource type="GDScript" id="GDScript_old1p"]
+
+[node name="Cyborg" type="CharacterBody2D"]
+position = Vector2(7, -1)
+scale = Vector2(1.75, 1.75)
+collision_mask = 7
+script = ExtResource("1_pltcv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-2.85714, 7.42857)
+shape = SubResource("CapsuleShape2D_4cy3e")
+
+[node name="Idle_Player_Left" type="Sprite2D" parent="."]
+texture = ExtResource("2_egdvd")
+offset = Vector2(8, 0)
+hframes = 4
+
+[node name="Idle_Player_Right" type="Sprite2D" parent="."]
+position = Vector2(-22.2857, -5.96046e-08)
+texture = ExtResource("3_b2h2d")
+offset = Vector2(8, 0)
+hframes = 4
+frame = 1
+
+[node name="Running_Player" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(6, -5)
+texture = ExtResource("3_eibk6")
+hframes = 6
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_j0yco")
+}
+script = SubResource("GDScript_old1p")
+
+[node name="walking" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("5_w4r8d")
+volume_db = 2.152
+pitch_scale = 2.0
+
+[node name="background" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("6_t0bg7")
+volume_db = -1.215
