@@ -1,6 +1,6 @@
 # Bullseye-Platformer
 
-An arcade-style platformer built in **Godot (GDScript)**.
+An arcade-style platformer built in **Godot** (Logic written in GDScript, a similar language to Python).
 
 Created in a 24-hour game jam. Second-place finish!
 
